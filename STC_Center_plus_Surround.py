@@ -20,10 +20,10 @@ theta = orient_map[x,y]
 #**************
 # load weight matrices:
 
-Wee=load('/path/Wee.npy')
-Wie=load('/path/Wie.npy')
-Wei=load('/path/Wei.npy')
-Wii=load('/path/Wii.npy')
+Wee=load('path/Wee.npy')
+Wie=load('path/Wie.npy')
+Wei=load('path/Wei.npy')
+Wii=load('path/Wii.npy')
 
 
 
