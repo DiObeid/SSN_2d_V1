@@ -1,6 +1,6 @@
 from numpy import *
 import sys
-sys.path.append("path") # path to saved weights
+sys.path.append('path') # path to saved weights
 from LT_parameter import *
 from scipy.special import erf     
 from scipy import sparse
@@ -21,9 +21,9 @@ theta = orient_map[x,y]
 # Load  weight matrices:
 
 Wee=load('path/Wee.npy')
-Wie=load('/path/Wie.npy')
-Wei=load('/path/Wei.npy')
-Wii=load('/path/Wii.npy')
+Wie=load('path/Wie.npy')
+Wei=load('path/Wei.npy')
+Wii=load('path/Wii.npy')
 
 
 #*********************
