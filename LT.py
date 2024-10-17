@@ -1,6 +1,6 @@
 from numpy import *
 import sys
-sys.path.append("/path/") # path to saved weights
+sys.path.append("path") # path to saved weights
 from LT_parameter import *
 from scipy.special import erf     
 from scipy import sparse
