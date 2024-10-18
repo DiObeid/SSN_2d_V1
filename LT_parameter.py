@@ -3,27 +3,22 @@ from scipy.special import erf
 
 ########################################################################
 
-# number of nerons in the network:
 
 orient_map=loadtxt('/orient_map.txt',delimiter=',') # import the orientation map as an array                            
 
-num_el=orient_map.size  # number of elements in the array 
+num_el=orient_map.size 
 
-# Assume matrix corresponds to 16deg x 16deg cortical area and use cortical magnification of 0.6mm/deg
+ncol=orient_map.shape[1]  
 
-ncol=orient_map.shape[1]  # number of columns
-
-delta_theta=16./(ncol-1)  #distance between two points in the matrix in degrees
-
-delta_x= delta_theta*0.6  # distance between two points in the matrix in mm
+delta_theta=16./(ncol-1) 
+delta_x= delta_theta*0.6  
 
 
-n_loc=2.                     # number of neurons at each location of the array or map
-n_loc_e=1.                   # number of E neurons at each location 
-N_pop= n_loc*num_el         # total number of neurons
-Ne= n_loc_e*num_el          # total number of E (excitatory)  neurons
-Ni= (n_loc-n_loc_e)*num_el  # total number of I (inhibitory) cells
-
+n_loc=2.                    
+n_loc_e=1.                  
+N_pop= n_loc*num_el        
+Ne= n_loc_e*num_el         
+Ni= (n_loc-n_loc_e)*num_el  
 
 # neuron parameters:
 mtaue= 10. 
@@ -36,14 +31,14 @@ srf=0.25/0.6
 
 
 # connection parameters:
-Rc=3. # the critical distance determining the separation between "Near" and "Far"
+Rc=3.
 
-sig_spatial_Far_ie =6.  # standard deviation of the spatial connectivity of E to I neurons   
-sig_spatial_Far_ee =3.  # standard deviation of the spatial connectivity of E to E neurons
-sig_spatial_i=2.   # standard deviation of the spatial connectivity for I neurons 
+sig_spatial_Far_ie =6. 
+sig_spatial_Far_ee =3.  
+sig_spatial_i=2.   
 sig_orient_Near_e=55.     
-sig_orient_Far_e=25.     # standard deviation of the orientation dependent part of the connectivity of E cells
-sig_orient_i=55.         # standard deviation of the orientation dependent part of the connectivity of the I cells
+sig_orient_Far_e=25.     
+sig_orient_i=55.         
 
 
 
@@ -70,16 +65,15 @@ def NR(C):
  response=(Rmax* C**3.5)/( C50**3.5 + C**3.5)
  return response
 
-sig_fori=20. # standard deviation in orientation space of the input                                                                                                                                       
+sig_fori=20.                                                                                                                                     
                                                                                                                                                                                                             
 
 # stimulus parameters
-C1=16.4 # center stim  contrast 
+C1=16.4 
 
 
 
-# Simulation parameters:
-
+# simulation parameters:
 
 run_time=500. 
 dt=0.5
