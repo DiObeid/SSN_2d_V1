@@ -32,7 +32,6 @@ srf=0.25/0.6
 
 # connection parameters:
 Rc=3.
-
 sig_spatial_Far_ie =6. 
 sig_spatial_Far_ee =3.  
 sig_spatial_i=2.   
