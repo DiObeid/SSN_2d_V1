@@ -46,7 +46,6 @@ sig_orient_i=55.
 
 # connection weights 
 psi=1.2
-
 #excitatory
 Jee_Near=psi*0.06           
 Jie_Near=psi*0.05         
