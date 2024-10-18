@@ -44,8 +44,7 @@ sig_orient_i=55.
 
 
 
-# Connection weights 
-
+# connection weights 
 psi=1.2
 
 #excitatory
