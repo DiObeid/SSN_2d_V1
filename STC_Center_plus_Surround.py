@@ -11,7 +11,7 @@ from functools import reduce
 # Extracting Map Information:
 
 putmask(orient_map, orient_map > 179.9, 0.0) 
-# Place neurons on the grid; each neuron has a location and a preferred orienttaion
+# Place neurons on the grid; each neuron has a location and a preferred orientation
 x = arange(num_el) // ncol
 y = arange(num_el) % ncol
 theta = orient_map[x,y]
