@@ -6,7 +6,7 @@ from scipy.special import erf
 
 # number of nerons in the network:
 
-orient_map=loadtxt('orient_map8c.txt',delimiter=',')
+orient_map=loadtxt('orient_map.txt',delimiter=',')
 
 num_el=orient_map.size 
 
