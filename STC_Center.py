@@ -125,7 +125,7 @@ if __name__ == "__main__":
 
  # run experiment:
  alphacen=rotate[::-1]
- Center_tune=zeros((len(alphacen),3))    # array to store contrast values and corresponding suppression weights
+ Center_tune=zeros((len(alphacen),3))   
 
  position=0
  for val in alphacen:
