@@ -135,7 +135,6 @@ def find_rate(alphacen1,alphacen2,alphas,s1,s2,s3):
   
  
 #*************************************************************************************                                                                                                                                              
-## non-zero angle plaid
 
 def Run(ang,alphacen2,alphas):
  try:
@@ -221,8 +220,8 @@ if __name__ == "__main__":
 
  # center stimuli
  plaid_angle=float(sys.argv[2])
- # alphacen1=arange(0.,180.-plaid_angle,10.) # positive plaid angles
- alphacen1=arange(0.-plaid_angle,180.,10.) # negative plaid angles 
+ # alphacen1=arange(0.,180.-plaid_angle,10.) 
+ alphacen1=arange(0.-plaid_angle,180.,10.) 
 
  # create lists for saving data
  W_P=[[] for i in range(2)]
