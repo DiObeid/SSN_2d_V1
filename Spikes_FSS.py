@@ -252,7 +252,7 @@ def Run(ang,alphacen2,alphas):
 
      if [s1,s2,s3]==[1,0,0]:
       po=[0.5,0.5,0.5]
-      inv_weights=sqrt(mean(ydata)/(ydata+1e-10))  # sigma in python = sqrt(1/w) where w is the weight vector in matlab fit                                                                                                         
+      inv_weights=sqrt(mean(ydata)/(ydata+1e-10))                                                                                                         
       popt,popcov=curve_fit(VonMises,xdata,ydata,po,sigma=inv_weights)
       a1=popt[0]
       b1=popt[1]
