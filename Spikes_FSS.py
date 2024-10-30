@@ -311,8 +311,8 @@ if __name__ == "__main__":
 
  # center stimulus  
  plaid_angle=int(sys.argv[2])
- #alphacen1=arange(0.,180.-plaid_angle,10.) # positive plaid angle
- alphacen1=arange(0.-plaid_angle,180.,10.)   # negative plaid angle
+ #alphacen1=arange(0.,180.-plaid_angle,10.) 
+ alphacen1=arange(0.-plaid_angle,180.,10.)   
  
  # create lists for saving data                                                                                                                     
  W_P=[[] for i in range(2)]
